@@ -46,7 +46,10 @@
       "spaced-comment": "off"
     }
   },
-  "repository": "/qrank-parser",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cheeriojs/cheerio.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
