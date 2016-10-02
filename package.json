@@ -9,7 +9,8 @@
     "url": ""
   },
   "files": [
-    "dist"
+    "src",
+    "test"
   ],
   "main": "src/index.js",
   "keywords": [
