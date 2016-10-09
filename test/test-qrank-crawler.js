@@ -12,7 +12,7 @@ describe('qrank.wbsrv.netからデータを取得する', () => {
     this.timeout(10000);
     const crawler = new QrankCrawler();
     it('Crawler returns statusCode 200', () => {
-      crawler.get().statusCode.should.equal(200);
+      crawler.get(10).statusCode.should.equal(200);
     });
     it('sync-requestモジュールは子プロセスを生成するためモック出来ない。');
   });

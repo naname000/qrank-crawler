@@ -11,9 +11,10 @@ export default class QrankCrawler {
     return 'http://qrank.wbsrv.net/';
   }
 
-  get() {
+  get(timeout) {
+    timeout = (timeout === undefined) ? 30 * 1000 : timeout * 1000;
     try {
-      return this.request('GET', this.url);
+      return this.request('GET', this.url, {timeout: timeout});
     } catch (e) {
       throw e;
     }
