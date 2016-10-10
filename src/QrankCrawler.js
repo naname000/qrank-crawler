@@ -8,7 +8,7 @@ export default class QrankCrawler {
   }
 
   get url() {
-    return 'http://qrank.wbsrv.net/';
+    return 'http://qrank.wbsrv.net/entries?days=7&orderby=stock_count';
   }
 
   get(timeout) {
