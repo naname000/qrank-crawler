@@ -10,5 +10,9 @@ export default class QrankResult {
     this.stock = null;
     this.hatenaBookmark = null;
   }
+
+  get url() {
+    return 'http://qiita.com/items/' + this.id;
+  }
 }
 
