@@ -31,7 +31,7 @@ var QrankCrawler = function () {
   }, {
     key: 'url',
     get: function get() {
-      return 'http://qrank.wbsrv.net/';
+      return 'http://qrank.wbsrv.net/entries?days=7&orderby=stock_count';
     }
   }]);
 
