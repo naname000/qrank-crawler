@@ -13,7 +13,7 @@ import QrankCrawler, {QrankParser} from '../src/qrank-crawler';
  
 const crawler = new QrankCrawler();
 const parser = new QrankParser();
-let result = parser.parse(crawler.get());
+let result = parser.parse(crawler.get().getBody('utf8'));
 console.log(result[0].title); // result has some lines.
 ```
 
@@ -22,7 +22,7 @@ console.log(result[0].title); // result has some lines.
 ```js
 try {
   let html = crawler.get();
-  let result = parser.parse(crawler.get());
+  let result = parser.parse(crawler.get().getBody('utf8'));
 } catch (e) {
   //ﾇﾙﾎﾟ
 }
