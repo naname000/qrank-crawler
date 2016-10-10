@@ -2,7 +2,7 @@
 import assert from 'assert';
 require('should');
 import FS from 'fs';
-import QrankCrawler, {QrankParser} from '../src/index';
+import {QrankParser, QrankCrawler} from '../src/index';
 
 const dummy = FS.readFileSync('test/qrank_daily.html', 'utf-8');
 const parser = new QrankParser();

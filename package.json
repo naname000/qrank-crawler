@@ -10,9 +10,10 @@
   },
   "files": [
     "src",
+    "dist",
     "test"
   ],
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "keywords": [
     ""
   ],
